@@ -3,9 +3,11 @@ from django.contrib.auth import authenticate, login, logout
 from .forms import Log_in_form,CreateUserForm
 from django.contrib.auth.models import Group
 from django.contrib import messages
+from .decorators import admin_only, unauthenticated_user, allowed_users
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-
+@unauthenticated_user
 def Login(request):
      form = Log_in_form()
 
@@ -18,14 +20,19 @@ def Login(request):
         if user is not None:
             print('logged in')
             login(request, user)
-            return render(request,'ic_dash.html')
+            return redirect('ic_dash')
      context = {'form': form}
      return render(request, 'login.html', context)
 
+
+@login_required(login_url='login')
 def log_out(request):
     logout(request)
     return redirect('login')
 
+
+@login_required(login_url='login')
+@allowed_users(allowed_roles=['insuranceCompany'])
 def registration(request):
     form = CreateUserForm()
 
@@ -43,3 +50,17 @@ def registration(request):
             messages.info(request, 'Username Or password incorrect')
     context = {'form': form}
     return render(request,'registration.html', context)
+
+
+
+@login_required(login_url='login')
+@allowed_users(allowed_roles=['FieldAgent'])
+def FA_dash(request):
+    return render(request, 'fa_dash.html')
+
+
+
+@login_required(login_url='login')
+@admin_only
+def IC_dash(request):
+    return render(request, 'ic_dash.html')

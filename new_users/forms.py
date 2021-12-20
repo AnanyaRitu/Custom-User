@@ -12,4 +12,4 @@ class Log_in_form(AuthenticationForm):
 class CreateUserForm(UserCreationForm):
     class Meta:
         model = NewUser
-        fields = ['user_name', 'first_name', 'email', 'password1', 'password2']
+        fields = ['user_name', 'email', 'password1', 'password2']
