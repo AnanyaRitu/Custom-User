@@ -1,8 +1,11 @@
-<form method="POST" action="">
+<h1>{{username}}</h1>
+
+<form method="POST" action="" autocomplete="on">
     {% csrf_token %}
+
     {%for field in form%}
-    {{field.label}}
-    {{field}} <br>
+    {{field.label}}<br>
+    {{field}} <br><br>
     {% endfor %}
 
     <input type="submit" name="Create User">

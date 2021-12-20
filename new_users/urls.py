@@ -7,4 +7,5 @@ urlpatterns = [
     path('registration/', views.registration, name="registration"),
     path('fa_dash/', views.FA_dash, name="fa_dash"),
     path('ic_dash/', views.IC_dash, name="ic_dash"),
+    path('user_name/', views.user_name_input, name="user_name"),
 ]
