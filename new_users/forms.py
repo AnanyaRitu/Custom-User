@@ -9,6 +9,11 @@ class Log_in_form(AuthenticationForm):
         model=NewUser
         fields = ['username', 'password']
 
+        widget={
+            'username':forms.TextInput(attrs={'class':'fields'}),
+            'password':forms.PasswordInput(attrs={'class':'fields'}),
+        }
+
 class CreateUserForm(UserCreationForm):
     class Meta:
         model = NewUser

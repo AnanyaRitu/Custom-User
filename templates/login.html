@@ -1,13 +1,42 @@
+{% extends "base.html" %}
 
-<h1>Log In</h1>
+{% block content %}
+{% load static %}
+{% load widget_tweaks %}
+<img src='{% static "logo/logo.png" %}' alt="home" class="logo" />
+<hr class="hr">
+<div class="row">
+    <div class="column cow-pic-col">
+        <img src='{% static "cow_pic/cow.png" %}' alt="home"  class="cow-img" />
+    </div>
+    <div class="column form-col">
+            <h1 class="h1">Sign In</h1>
+        <p class="welcome">Welcome to Insure Cow</p>
 
-<form method="POST" action="">
-    {% csrf_token %}
-    {%for field in form%}
-    {{field.label}}
-    {{field}} <br>
-    {% endfor %}
+        <form method="POST" action="" >
+            {% csrf_token %}
+            <div class="username">
+            {{form.username.label}}<br>
+        </div>
+        <div>
+            {{form.username|add_class:"username-field" }}<br>
+        </div>
+        <div class="password">
+            {{form.password.label}}<br>
+        </div>
+        <div >
+            {{form.password|add_class:"password-field"}}<br>
+        </div>
+        
+            <input type="submit" name="Log in" class="login-button" value="Log In">
+        
+        </form>
+    <a class="btn btn-primary btn-sm btn-block register" href={% url 'user_name' %}>
+        Register</a>
 
-    <input type="submit" name="Log in">
-</form>
-<a class="btn btn-primary btn-sm btn-block" href={% url 'user_name' %}>Register</a>
+        <a href={}>Forgot Password?</a>
+</div>
+  </div>
+
+
+{% endblock content %}

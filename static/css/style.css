@@ -1,0 +1,209 @@
+body, head{
+    margin-left: 100px ;
+    margin-right: 100px ;
+}
+
+.h1{
+    position: absolute;
+    width: 86px;
+    height: 39px;
+    left: 54px;
+    top: 39px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+
+
+color: #2F673F;
+
+}
+
+.logo{
+    position: absolute;
+    width: 204px;
+    height: 90px;
+    left: 114px;
+    top: 31px;
+}
+
+.hr{
+    position: absolute;
+    width: 1141px;
+    height: 1px;
+    top: 116px;
+    left: 75px;
+    background: #2F673F;
+}
+
+.row {
+    display: flex;
+    margin-top: 177px;
+    background: #EFFFF0;
+    border-radius: 15px;
+  }
+  
+.column {
+   flex: 50%;
+  }
+
+.form-col{
+    position: absolute;
+    width: 568px;
+    height: 687px;
+    left: 644px;
+    top: 177px;
+
+    background: #FDFCFC;
+    box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.67);
+    border-radius: 15px;
+}
+
+.username{
+    position: absolute;
+    width: 101px;
+    height: 26px;
+    left: 49px;
+    top: 190px;
+    color: #2F673F;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height */
+}
+
+
+.cow-pic-col{
+    position: absolute;
+    width: 568px;
+    height: 687px;
+    top: 177px;
+    left: 75px;
+    background: rgba(239, 255, 240, 0.5);
+    border-radius: 15px;
+}
+
+.welcome{
+    /* Welcome Insure Cow! */
+
+
+    position: absolute;
+    height: 30px;
+    width: 250px;
+    left: 61px;
+    top: 105px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #2F673F;
+}
+
+.username-field{
+    outline: none;
+    border:none;
+    position: absolute;
+    width: 356px;
+    height: 35px;
+    left: 52px;
+    top: 243px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #226034;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+
+.password{
+    /* Password : */
+
+
+    position: absolute;
+    width: 89px;
+    height: 26px;
+    left: 49px;
+    top: 316px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height */
+
+
+    color: #2F673F;
+}
+
+.password-field{
+    position: absolute;
+    width: 356px;
+    height: 35px;
+    left: 49px;
+    top: 379px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #226034;
+    box-sizing: border-box;
+    border-radius: 10px;
+    }
+
+.form-left{
+    left: 49px;
+}
+
+.login-button{
+    position: absolute;
+    width: 356px;
+    height: 32px;
+    left: 49px;
+    top: 583px;
+
+    background: #23BB86;
+    border-radius: 5px;
+}
+
+.cow-img{
+    position: absolute;
+    width: 556px;
+    height: 543px;
+    top: 92px;
+}
+
+.register{
+    left: 341px;
+    top: 687px;
+    width: 63px;
+    height: 21px;
+}
+
+a{
+    /* Register? */
+
+
+    position: absolute;
+
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #2F673F;
+}
