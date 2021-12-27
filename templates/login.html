@@ -3,40 +3,63 @@
 {% block content %}
 {% load static %}
 {% load widget_tweaks %}
-<img src='{% static "logo/logo.png" %}' alt="home" class="logo" />
-<hr class="hr">
-<div class="row">
-    <div class="column cow-pic-col">
-        <img src='{% static "cow_pic/cow.png" %}' alt="home"  class="cow-img" />
+
+<section class="d-block">
+    <div class="container under-line">
+        <div class="row row-height">
+            <div class="col-lg-6 cow-pic-col">
+                <img src='{% static "cow_pic/cow.png" %}' alt="cow" class="img-padding">
+            </div>
+            <div class="col-lg-6 form-col">
+                <div class="form-col-content">
+                    <h1>Sign In</h1>
+                    <h3>Welcome to Insure Cow</h3>
+                    <form method="POST" action="" class="form">
+                        {% csrf_token %}
+                        <div class="input-font">
+                            {{form.username.label}}<br>
+                        </div>
+                        <div>
+                            {{form.username|add_class:" input-field" }}<br>
+                        </div>
+                        <div class="input-font">
+                            {{form.password.label}}<br>
+                        </div>
+                        <div>
+                            {{form.password|add_class:"input-field"}}<br>
+                        </div>
+
+                        <input type="checkbox" id="condition" name="condition" value="condition"
+                            class="condition-padding">
+                        <label for="condition" class="condition condition-padding"> I agree to platform Terms of Service
+                            and Privacy
+                            Policy </label><br>
+
+                        <input type="submit" name="Log in" value="Log In" class="login-button login-text">
+
+                    </form>
+                    <div class="row forgot-row-padding">
+                        <div class="col-8">
+                            <a href=#>Forgot Passowrd?</a>
+                        </div>
+                        <div class="col-4">
+                            <a href={% url 'user_name' %}>
+                                Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom-text-padding">
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    <span class="h2-font">Insure Cow</span>
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="column form-col">
-            <h1 class="h1">Sign In</h1>
-        <p class="welcome">Welcome to Insure Cow</p>
 
-        <form method="POST" action="" >
-            {% csrf_token %}
-            <div class="username">
-            {{form.username.label}}<br>
-        </div>
-        <div>
-            {{form.username|add_class:"username-field" }}<br>
-        </div>
-        <div class="password">
-            {{form.password.label}}<br>
-        </div>
-        <div >
-            {{form.password|add_class:"password-field"}}<br>
-        </div>
-        
-            <input type="submit" name="Log in" class="login-button" value="Log In">
-        
-        </form>
-    <a class="btn btn-primary btn-sm btn-block register" href={% url 'user_name' %}>
-        Register</a>
-
-        <a href={}>Forgot Password?</a>
-</div>
-  </div>
+</section>
 
 
 {% endblock content %}

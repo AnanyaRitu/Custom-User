@@ -1,124 +1,136 @@
-body, head{
-    margin-left: 100px ;
-    margin-right: 100px ;
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
 }
-
-.h1{
-    position: absolute;
-    width: 86px;
-    height: 39px;
-    left: 54px;
-    top: 39px;
-
-    font-family: Poppins;
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+h1{
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 39px;
-    /* identical to box height */
-
-
-color: #2F673F;
-
-}
-
-.logo{
-    position: absolute;
-    width: 204px;
-    height: 90px;
-    left: 114px;
-    top: 31px;
-}
-
-.hr{
-    position: absolute;
-    width: 1141px;
-    height: 1px;
-    top: 116px;
-    left: 75px;
-    background: #2F673F;
-}
-
-.row {
-    display: flex;
-    margin-top: 177px;
-    background: #EFFFF0;
-    border-radius: 15px;
-  }
-  
-.column {
-   flex: 50%;
-  }
-
-.form-col{
-    position: absolute;
-    width: 568px;
-    height: 687px;
-    left: 644px;
-    top: 177px;
-
-    background: #FDFCFC;
-    box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.67);
-    border-radius: 15px;
-}
-
-.username{
-    position: absolute;
-    width: 101px;
-    height: 26px;
-    left: 49px;
-    top: 190px;
     color: #2F673F;
+    max-width: 100%;
+    max-height: 100%;
+}
+h2{
+    padding-top:43px;
 
+}
+h3{
+    width:80%;
+    padding-top:21px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F673F;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+hr{
+    background: #2F673F;
+    border-radius: 0px 0.5px 0.5px 0px;
+}
+
+.input-font{
+    padding-top:42px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
     line-height: 25px;
-    /* identical to box height */
+    color: #2F673F;
 }
 
+.h2-font{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2F673F;
+}
 
+.img-padding{
+    padding-top:109px;
+    padding-bottom:137px;
+}
+
+.logo{
+    width: 204px;
+    height: 90px;
+    top: 31px;
+}
+
+.nav-height{
+    height: 116px;
+    padding-bottom:0px !important;
+
+}
+
+.under-line{
+    border-bottom: 1px solid #2F673F !important;  
+}
+.row-height{
+    padding-top:50px;
+    padding-bottom:77px;
+}
 .cow-pic-col{
-    position: absolute;
-    width: 568px;
-    height: 687px;
-    top: 177px;
-    left: 75px;
     background: rgba(239, 255, 240, 0.5);
     border-radius: 15px;
 }
 
-.welcome{
-    /* Welcome Insure Cow! */
-
-
-    position: absolute;
-    height: 30px;
-    width: 250px;
-    left: 61px;
-    top: 105px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-
-
-    color: #2F673F;
+.form-col-content{
+    padding-top:59px;
+    padding-left:88px;
 }
 
-.username-field{
-    outline: none;
-    border:none;
-    position: absolute;
-    width: 356px;
-    height: 35px;
-    left: 52px;
-    top: 243px;
+.form-col{
+    background: #FDFCFC;
+    box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.67);
+    border-radius: 15px;
+}
 
+
+
+.text-style{
+    padding-right:90px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2F673F;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    background: #2F673F;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.line{
+    display:block;
+    width:35%; /*or whatever width you want the effect of <hr>*/
+    border-top: 2px solid  #2F673F;
+}
+.footer-row-height{
+    padding-top:42px;
+}
+
+.form-col-end{
+    font-size:0px;
+}
+
+/*new css end */
+
+.input-field{
+    height:150%;
+    width: 80%;
     background: #FFFFFF;
     border: 0.5px solid #226034;
     box-sizing: border-box;
@@ -126,84 +138,52 @@ color: #2F673F;
     
 }
 
-.password{
-    /* Password : */
-
-
-    position: absolute;
-    width: 89px;
-    height: 26px;
-    left: 49px;
-    top: 316px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 25px;
-    /* identical to box height */
-
-
-    color: #2F673F;
-}
-
-.password-field{
-    position: absolute;
-    width: 356px;
-    height: 35px;
-    left: 49px;
-    top: 379px;
-
-    background: #FFFFFF;
-    border: 0.5px solid #226034;
-    box-sizing: border-box;
-    border-radius: 10px;
-    }
-
-.form-left{
-    left: 49px;
-}
-
 .login-button{
-    position: absolute;
-    width: 356px;
-    height: 32px;
-    left: 49px;
-    top: 583px;
-
     background: #23BB86;
-    border-radius: 5px;
+    border-radius: 200px;
 }
 
-.cow-img{
-    position: absolute;
-    width: 556px;
-    height: 543px;
-    top: 92px;
+.login-text{
+    width:40%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
 }
 
-.register{
-    left: 341px;
-    top: 687px;
-    width: 63px;
-    height: 21px;
+checkbox{
+    background: #FFFFFF;
+    border: 0.5px solid #2F673F;
+    box-sizing: border-box;
+    border-radius: 1px;
 }
 
-a{
-    /* Register? */
+.condition-padding{
+    padding-top:23px;
+    padding-bottom:29px;
+}
 
+.forgot-row-padding{
+    padding-top:43px;
+}
 
-    position: absolute;
+.form-bottom-text-padding{
+    padding-top:76px;
+}
 
-
-
+.condition{
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 18px;
     /* identical to box height */
 
 
     color: #2F673F;
 }
+
