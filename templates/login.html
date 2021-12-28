@@ -7,7 +7,7 @@
 <section class="d-block">
     <div class="container under-line">
         <div class="row row-height">
-            <div class="col-lg-6 cow-pic-col">
+            <div class="col-lg-6 cow-pic-col d-none d-lg-block">
                 <img src='{% static "cow_pic/cow.png" %}' alt="cow" class="img-padding">
             </div>
             <div class="col-lg-6 form-col">
@@ -40,20 +40,18 @@
                     </form>
                     <div class="row forgot-row-padding">
                         <div class="col-8">
-                            <a href=#>Forgot Passowrd?</a>
+                            <a class="text-style" href=#>Forgot Passowrd?</a>
                         </div>
                         <div class="col-4">
-                            <a href={% url 'user_name' %}>
+                            <a class="text-style" href={% url 'user_name' %}>
                                 Register</a>
                         </div>
                     </div>
                 </div>
-                <div class="form-bottom-text-padding">
-                    <span class="line"></span>
-                    <span class="dot"></span>
-                    <span class="h2-font">Insure Cow</span>
-                    <span class="dot"></span>
-                    <span class="line"></span>
+                <div class="horizontal-logo contain">
+                    <div class="before"></div>
+                    <div class="logo-text contain">Insure Cow</div>
+                    <div class="after"></div>
                 </div>
             </div>
         </div>

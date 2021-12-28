@@ -1,189 +1,241 @@
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0;
-    padding:0;
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
-h1{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 39px;
-    color: #2F673F;
-    max-width: 100%;
-    max-height: 100%;
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+  color: #2f673f;
+  max-width: 100%;
+  max-height: 100%;
 }
-h2{
-    padding-top:43px;
-
+h2 {
+  padding-top: 43px;
 }
-h3{
-    width:80%;
-    padding-top:21px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #2F673F;
-    max-width: 100%;
-    max-height: 100%;
+h3 {
+  width: 80%;
+  padding-top: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2f673f;
+  max-width: 100%;
+  max-height: 100%;
 }
-
-hr{
-    background: #2F673F;
-    border-radius: 0px 0.5px 0.5px 0px;
+.contain {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.input-font{
-    padding-top:42px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 25px;
-    color: #2F673F;
+hr {
+  background: #2f673f;
+  border-radius: 0px 0.5px 0.5px 0px;
 }
 
-.h2-font{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    color: #2F673F;
+.input-font {
+  padding-top: 42px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #2f673f;
 }
 
-.img-padding{
-    padding-top:109px;
-    padding-bottom:137px;
+.h2-font {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2f673f;
 }
 
-.logo{
-    width: 204px;
-    height: 90px;
-    top: 31px;
+.img-padding {
+  padding-top: 109px;
+  padding-bottom: 137px;
 }
 
-.nav-height{
-    height: 116px;
-    padding-bottom:0px !important;
-
+.logo {
+  width: 204px;
+  height: 90px;
+  top: 31px;
 }
 
-.under-line{
-    border-bottom: 1px solid #2F673F !important;  
-}
-.row-height{
-    padding-top:50px;
-    padding-bottom:77px;
-}
-.cow-pic-col{
-    background: rgba(239, 255, 240, 0.5);
-    border-radius: 15px;
+.nav-height {
+  height: 116px;
+  padding-bottom: 0px !important;
 }
 
-.form-col-content{
-    padding-top:59px;
-    padding-left:88px;
+.under-line {
+  border-bottom: 1px solid #2f673f !important;
+}
+.row-height {
+  padding-top: 50px;
+  padding-bottom: 77px;
+}
+.cow-pic-col {
+  background: rgba(239, 255, 240, 0.5);
+  border-radius: 15px;
 }
 
-.form-col{
-    background: #FDFCFC;
-    box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.67);
-    border-radius: 15px;
+.form-col-content {
+  padding-top: 59px;
+  padding-left: 88px;
 }
 
-
-
-.text-style{
-    padding-right:90px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #2F673F;
-}
-.dot{
-    width: 8px;
-    height: 8px;
-    background: #2F673F;
-    border-radius: 50%;
-    display: inline-block;
+.form-col {
+  background: #fdfcfc;
+  box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.67);
+  border-radius: 15px;
 }
 
-.line{
-    display:block;
-    width:35%; /*or whatever width you want the effect of <hr>*/
-    border-top: 2px solid  #2F673F;
+.text-style {
+  padding-right: 90px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2f673f;
 }
-.footer-row-height{
-    padding-top:42px;
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #2f673f;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.form-col-end{
-    font-size:0px;
+.line {
+  display: block;
+  width: 35%; /*or whatever width you want the effect of <hr>*/
+  border-top: 2px solid #2f673f;
+}
+.footer-row-height {
+  padding-top: 42px;
+}
+
+.form-col-end {
+  font-size: 0px;
 }
 
 /*new css end */
 
-.input-field{
-    height:35px;
-    width: 80%;
-    background: #FFFFFF;
-    border: 0.5px solid #226034;
-    box-sizing: border-box;
-    border-radius: 10px;
-    
+.input-field {
+  height: 35px;
+  width: 80%;
+  background: #ffffff;
+  border: 0.5px solid #226034;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-.login-button{
-    background: #23BB86;
-    border-radius: 200px;
+.login-button {
+  background: #23bb86;
+  border-radius: 200px;
 }
 
-.login-text{
-    width:40%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    /* identical to box height */
+.login-text {
+  width: 40%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
 
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-checkbox{
-    background: #FFFFFF;
-    border: 0.5px solid #2F673F;
-    box-sizing: border-box;
-    border-radius: 1px;
+checkbox {
+  background: #ffffff;
+  border: 0.5px solid #2f673f;
+  box-sizing: border-box;
+  border-radius: 1px;
 }
 
-.condition-padding{
-    padding-top:23px;
-    padding-bottom:29px;
+.condition-padding {
+  padding-top: 23px;
+  padding-bottom: 29px;
 }
 
-.forgot-row-padding{
-    padding-top:43px;
+.forgot-row-padding {
+  padding-top: 43px;
 }
 
-.form-bottom-text-padding{
-    padding-top:76px;
+.form-bottom-text-padding {
+  padding-top: 76px;
 }
 
-.condition{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height */
+.condition {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
 
-
-    color: #2F673F;
+  color: #2f673f;
 }
 
+/* horizontal logo */
+.horizontal-logo {
+  margin-top: 34px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.horizontal-logo .before {
+  display: flex;
+  width: 60%;
+  height: 2px;
+  background: rgba(47, 103, 63, 1);
+}
+
+.horizontal-logo .after {
+  display: flex;
+  width: 60%;
+  height: 2px;
+  background: rgba(47, 103, 63, 1);
+}
+
+.logo-text {
+  position: relative;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 308px;
+  height: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #2f673f;
+}
+
+.logo-text::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 25px;
+  background-color: rgba(47, 103, 63, 1);
+}
+
+.logo-text:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 25px;
+  background-color: rgba(47, 103, 63, 1);
+}
