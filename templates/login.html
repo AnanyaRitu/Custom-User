@@ -5,15 +5,15 @@
 {% load widget_tweaks %}
 
 <section class="d-block">
-    <div class="container under-line">
+    <div class="container container-lg under-line-form">
         <div class="row row-height">
             <div class="col-lg-6 cow-pic-col d-none d-lg-block">
                 <img src='{% static "cow_pic/cow.png" %}' alt="cow" class="img-padding">
             </div>
             <div class="col-lg-6 form-col">
                 <div class="form-col-content">
-                    <h1>Sign In</h1>
-                    <h3>Welcome to Insure Cow</h3>
+                    <h1 class="h1-style">Sign In</h1>
+                    <h3 class="h3-style">Welcome to Insure Cow!</h3>
                     <form method="POST" action="" class="form">
                         {% csrf_token %}
                         <div class="input-font">
@@ -39,18 +39,18 @@
 
                     </form>
                     <div class="row forgot-row-padding">
-                        <div class="col-8">
-                            <a class="text-style" href=#>Forgot Passowrd?</a>
+                        <div class="col-9">
+                            <a style="text-decoration:none" class="form-bottom-links" href=#>Forgot Passowrd?</a>
                         </div>
-                        <div class="col-4">
-                            <a class="text-style" href={% url 'user_name' %}>
+                        <div class="col-3">
+                            <a style="text-decoration:none" class="form-bottom-links" href={% url 'user_name' %}>
                                 Register</a>
                         </div>
                     </div>
                 </div>
-                <div class="horizontal-logo contain">
+                <div class="horizontal-logo">
                     <div class="before"></div>
-                    <div class="logo-text contain">Insure Cow</div>
+                    <div class="logo-text">Insure Cow</div>
                     <div class="after"></div>
                 </div>
             </div>
