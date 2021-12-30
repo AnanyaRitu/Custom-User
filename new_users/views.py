@@ -39,7 +39,8 @@ def log_out(request):
 #@allowed_users(allowed_roles=['insuranceCompany'])
 def registration(request):
     username=val()
-    req=requests.get("https://secret-gorge-75679.herokuapp.com/user/"+username)
+    print(str(username))
+    req=requests.get("https://secret-gorge-75679.herokuapp.com/user/"+str(username))
     if req.json():
         email=req.json()[0]['email']
         username=req.json()[0]['username']

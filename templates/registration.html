@@ -1,12 +1,98 @@
-<h1>{{username}}</h1>
+{% extends "base.html" %} {% block content %} {% load static %}{% load widget_tweaks %}
 
-<form method="POST" action="" autocomplete="on">
-    {% csrf_token %}
 
-    {%for field in form%}
-    {{field.label}}<br>
-    {{field}} <br><br>
-    {% endfor %}
+      <!-- -------------------------- first section start  ----------------------------- -->
+      <section id="first-section">
+        <div class="body">
+                  <div class="row">
+  
+                    
+<!-------------------------------- left image ----------------------------------------------------->
+                      <div class="col-md-6">
+                      <div class="left">
+                      <img src='{% static "cow_pic/cow.png" %}' class="img-fluid" alt="" style="padding-bottom: 138px; padding-top: 108px; padding-right: 3px;padding-left: 2px;" srcset="">
+                      </div>
+                      </div>
+ <!--------------------------------Right col ----------------------------------------------------->     
+                      <div class="col-md-6 col-sm-12">
+                          <div class="right">
+  <!-------------------------------- form ----------------------------------------------------->
+                              <form class="form" method="POST" action="" autocomplete="on">
+                                {% csrf_token %}  
+                              <!--------- registration h1 tag ---------------->      
+                                  <div class="reg">
+                                  <h1 class="font-weight-bold">Register Account</h1>
+                                  </div>
+                              <!----------- form create text------------->
+                                  <div class="create">
+                                      <h4>Create your insure cow account</h4>
+                                  </div>
+                              <!------------ User --------------------->
+                              <div class="user">
+                                    {{form.user_name.label}}<br>
+                                <div class="icone">
+                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                  {{form.user_name|add_class:"form-control" }}<br>
+                                </div>
+                              </div>
+  
+                              <!----------- Email -------------------->                
+                              <div class="email">
+                                {{form.email.label}}<br>
+                                <div class="icone">
+                                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                                  {{form.email|add_class:"form-control" }}<br>
+                                </div>
+                              </div>
+                              <!---------------- Create password ------------------>
+                    
+                              <div class="create-pass">
+                                {{form.password1.label}}<br>
+                                <div class="icone">
+                                  <i class="fa fa-unlock" aria-hidden="true"></i>
+                                  {{form.password1|add_class:"form-control" }}<br>
+                                </div>
+                              </div>
+                                
+                              <!-------------- confirm password ---------------------->                    
+                              <div class="create-pass">
+                                {{form.password2.label}}<br>
+                                <div class="icone">
+                                  <i class="fa fa-unlock" aria-hidden="true"></i>
+                                  {{form.password2|add_class:"form-control" }}<br>
+                                </div>
+                              </div>
+                              <!-------------- check box with text ---------------------->              
+                                <div class="check">
+                                  <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                  <div>
+                                  <p>I agree to platform terms of service and privacy policy.</p>
+                                  </div>
+                                </div>
+                               <!---------- button--------------->
+                                <div >
+                                  <button class="btn rounded-pill">Register</button>
+                                </div>
+                                      
+                                <!------ horizontal logo ------------>     
+                                  <div class="horizontal-logo">
+                                      <div class="before"></div>
+                                      <div class="logo-text">Insure Cow</div>
+                                      <div class="after"></div>
+                                  </div>
+                                <!----------- horizontal logo end ---------------->
+                    
+                              </form>
+<!-------------------------------- form end ----------------------------------------------------->
 
-    <input type="submit" name="Create User">
-</form>
+                          </div>
+      
+                      </div>
+                  
+                      </div>
+                    
+      </section>
+      <!-- -------------------------- first section end ----------------------------- -->
+
+
+{% endblock content %}

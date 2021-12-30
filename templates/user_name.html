@@ -1,10 +1,71 @@
-<h1>username</h1>
+{% extends "base.html" %} {% block content %} {% load static %}
 
-<form method="POST" action="">
+<!-- -------------------------- first section start  ----------------------------- -->
+<section id="first-section">
+  <div class="body">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="left">
+          <img
+            src='{% static "cow_pic/cow.png" %}'
+            class="img-fluid"
+            alt=""
+            style="
+              padding-bottom: 138px;
+              padding-top: 108px;
+              padding-right: 3px;
+              padding-left: 2px;
+            "
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="right-reg">
+   <!--------------------------------------- form ------------------------------------------->
+   <form class="form" method="POST" action="">
     {% csrf_token %}
-    <label for="username">User name:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <br>
+    <div class="reg">
+    <h1 class="font-weight-bold">Register Account</h1>
+    </div>
 
-    <input type="submit" name="user_name" value="continue">
+    <div class="create">
+        <h4>Enter the User Name to create your account </h4>
+    </div>
+
+    <div class="username"> 
+      <div class="user">
+          <label for="uname">User name:</label><br>
+          <div class="icone">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input  type="text"
+          id="uname"
+          name="username"  placeholder="User name" class="form-control"/>
+      </div>
+    </div>
+
+    <div >
+      <button class="btn rounded-pill">Continue </button>
+  </div>     
+
+  </div> 
+    <div class="horizontal-logo2">
+        <div class="before"></div>
+        <div class="logo2-text">Insure Cow</div>
+        <div class="after"></div>
+    </div>
 </form>
+<!-------------------------------- Form end ----------------------------------------------------->
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- -------------------------- first section end ----------------------------- -->
+
+
+{% endblock content %}

@@ -4,60 +4,88 @@
 {% load static %}
 {% load widget_tweaks %}
 
-<section class="d-block">
-    <div class="container container-lg under-line-form">
-        <div class="row row-height">
-            <div class="col-lg-6 cow-pic-col d-none d-lg-block">
-                <img src='{% static "cow_pic/cow.png" %}' alt="cow" class="img-padding">
-            </div>
-            <div class="col-lg-6 form-col">
-                <div class="form-col-content">
-                    <h1 class="h1-style">Sign In</h1>
-                    <h3 class="h3-style">Welcome to Insure Cow!</h3>
-                    <form method="POST" action="" class="form">
-                        {% csrf_token %}
-                        <div class="input-font">
-                            {{form.username.label}}<br>
-                        </div>
-                        <div>
-                            {{form.username|add_class:"input-field" }}<br>
-                        </div>
-                        <div class="input-font">
-                            {{form.password.label}}<br>
-                        </div>
-                        <div>
-                            {{form.password|add_class:"input-field"}}<br>
-                        </div>
 
-                        <input type="checkbox" id="condition" name="condition" value="condition"
-                            class="condition-padding">
-                        <label for="condition" class="condition condition-padding"> I agree to platform Terms of Service
-                            and Privacy
-                            Policy </label><br>
 
-                        <input type="submit" name="Log in" value="Log In" class="login-button login-text">
 
-                    </form>
-                    <div class="row forgot-row-padding">
-                        <div class="col-9">
-                            <a style="text-decoration:none" class="form-bottom-links" href=#>Forgot Passowrd?</a>
-                        </div>
-                        <div class="col-3">
-                            <a style="text-decoration:none" class="form-bottom-links" href={% url 'user_name' %}>
-                                Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-logo">
-                    <div class="before"></div>
-                    <div class="logo-text">Insure Cow</div>
-                    <div class="after"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <!-- -------------------------- first section start  ----------------------------- -->
+      <section id="first-section">
+        <div class="body">
+                  <div class="row">
+  
+                    
+<!-------------------------------- left image ----------------------------------------------------->
+                      <div class="col-md-6">
+                      <div class="left">
+                      <img src='{% static "cow_pic/cow.png" %}' class="img-fluid" alt="" style="padding-bottom: 138px; padding-top: 108px; padding-right: 3px;padding-left: 2px;" srcset="">
+                      </div>
+                      </div>
+ <!--------------------------------Right col ----------------------------------------------------->     
+                      <div class="col-md-6 col-sm-12">
+                          <div class="right">
+  <!-------------------------------- form ----------------------------------------------------->
+                              <form class="form" method="POST" action="" autocomplete="on">
+                                {% csrf_token %}  
+                              <!--------- registration h1 tag ---------------->      
+                                  <div class="reg">
+                                  <h1 class="font-weight-bold">Sign In</h1>
+                                  </div>
+                              <!----------- form create text------------->
+                                  <div class="create welcome-text-padding">
+                                      <h4>Welcome to Insure Cow!</h4>
+                                  </div>
+                              <!------------ User --------------------->
+                              <div class="user">
+                                    {{form.username.label}}<br>
+                                <div class="icone">
+                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                  {{form.username|add_class:"form-control" }}<br>
+                                </div>
+                              </div>
+                              <!-------------- password ---------------------->                    
+                              <div class="create-pass password-label-padding">
+                                {{form.password.label}}<br>
+                                <div class="icone">
+                                  <i class="fa fa-unlock" aria-hidden="true"></i>
+                                  {{form.password|add_class:"form-control" }}<br>
+                                </div>
+                              </div>
+                               <!---------- button--------------->
+                                <div >
+                                  <button class="btn rounded-pill">Log in</button>
+                                </div>
 
-</section>
+                <!--------------------- forgot row start--------------->
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a class="form-bottom-links" href=#>Forgot Passowrd?</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a class="form-bottom-links" href={% url 'user_name' %}>
+                                            Register</a>
+                                    </div>
+                                </div>
+                                <!---------- forgot row start--------------->
 
+<!----------------------------- horizontal logo ------------------------------------------------->     
+                                    <div class="horizontal-logo">
+                                        <div class="before"></div>
+                                            <div class="logo-text">Insure Cow</div>
+                                                <div class="after"></div>
+                                                    </div>
+                                <!----------- horizontal logo end ---------------->
+                                      
+
+                    
+                              </form>
+<!-------------------------------- form end ----------------------------------------------------->
+
+                          </div>
+      
+                      </div>
+                  
+                      </div>
+                    
+      </section>
+      <!-- -------------------------- first section end ----------------------------- -->
 
 {% endblock content %}

@@ -1,3 +1,5 @@
+{% load static %} 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +12,7 @@
 
 
     <!-- Favicon -->
-    <link rel="icon" href="images/logo2.png" type="image/gif" sizes="16x16" />
+    <link rel="icon" href= "{% static 'logo/favicon.png' %}" type="image/gif" sizes="16x16" />
 
     <!-- font awesome -->
     <link
@@ -39,9 +41,12 @@
 
     <title>Insure Cow</title>
 
-    {% load static %} 
+   
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <script src="{% static 'language_trans.js' %}"  type="text/javascript"></script>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+        <!--  Language Script  -->
+    <script src="{% static 'js/language_trans.js' %}"  type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
@@ -298,7 +303,6 @@
     <!--  toogle button  -->
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
-    <!--  Language Script  -->
-    <script type="text/javascript" src="language_trans.js"></script>
+
   </body>
 </html>

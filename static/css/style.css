@@ -1,555 +1,10 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* ----------------css from insure cow template for header, footer---------------*/
 
-* {
-  font-family: Poppins;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-html,
-body {
-  overflow-x: hidden;
-}
+/*----------css from insure cow template end--------------------*/
 
-.navbar-brand img {
-  height: 60px;
-  width: auto;
-}
-
-.test {
-  color: red;
-}
-
-.zero-padding {
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item .nav-custom {
-  color: black;
-  /* font-weight: 800; */
-}
-
-.nav-item .nav-custom:hover {
-  border: 2px solid #2fab73;
-  border-radius: 5px;
-}
-
-.nav-link button {
-  margin: 0;
-  padding: 0;
-  background: #f6f6f6;
-  color: #2fab73;
-  border-radius: 25px;
-  border: 2px solid;
-  padding: 5px 10px;
-  margin: 0 10px;
-}
-
-nav {
-  background-color: transparent;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 768px) {
-  .basic {
-    margin-top: 140px;
-  }
-  .lite {
-    margin-top: 230px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .check-ul li {
-    height: 30px;
-    display: inline-block;
-  }
-}
-
-.scroll-up {
-  background: #23bb86;
-  display: inline-block;
-  color: white;
-  width: 43px;
-  bottom: 35px;
-  right: 31px;
-  height: 42px;
-  position: fixed;
-  border-radius: 50%;
-}
-
-/* ------ footer section ---------  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  outline: none;
-}
-
-a,
-a:active,
-a:focus {
-  color: #333;
-  text-decoration: none;
-  transition-timing-function: ease-in-out;
-  -ms-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-section {
-  padding: 60px 0;
-  /* min-height: 100vh;*/
-}
-
-.main-footer {
-  position: relative;
-  padding: 110px 0px 0px;
-  background-color: #e2e7f2;
-  background-repeat: repeat-x;
-  background-position: right bottom;
-}
-
-.main-footer .footer-widget {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.main-footer .widgets-section {
-  position: relative;
-  padding-bottom: 60px;
-}
-
-.main-footer .footer-widget h2 {
-  position: relative;
-  font-size: 22px;
-  font-weight: 500;
-  color: #161c42;
-  line-height: 1.2em;
-  margin-bottom: 30px;
-  margin-top: 25px;
-  text-transform: capitalize;
-}
-
-.main-footer .about-widget {
-  position: relative;
-}
-
-.main-footer .about-widget .logo {
-  position: relative;
-  margin-bottom: 15px;
-  width: 210px;
-}
-.main-footer .about-widget .text {
-  position: relative;
-}
-
-.main-footer .about-widget .text p {
-  position: relative;
-  color: #0b132a;
-  text-align: justify;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.7em;
-  margin-bottom: 20px;
-}
-
-.main-footer .about-widget .text p:last-child {
-  margin-bottom: 0px;
-}
-
-/* Footer List */
-
-.main-footer .footer-list {
-  position: relative;
-}
-
-.main-footer .footer-list li {
-  position: relative;
-  margin-bottom: 17px;
-}
-
-.main-footer .footer-list li a {
-  position: relative;
-  color: #0b132a;
-  font-weight: 500;
-  font-size: 15px;
-  /* padding-left: 15px; */
-  -webkit-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.main-footer .footer-list li a:hover {
-  text-decoration: underline;
-  color: #23bb86;
-}
-
-.main-footer .footer-list li a:before {
-  display: none;
-  position: absolute;
-  content: "\f105";
-  left: 0px;
-  top: 0px;
-  color: #8a8d91;
-  font-weight: 800;
-  font-family: "Font Awesome 5 Free";
-}
-
-/*Gallery Widget*/
-
-.main-footer .gallery-widget {
-  position: relative;
-  max-width: 350px;
-}
-
-.main-footer .gallery-widget .images-outer {
-  position: relative;
-  margin: 0px -3px;
-}
-
-.main-footer .gallery-widget .image-box {
-  position: relative;
-  float: left;
-  width: 33.333%;
-  padding: 0px 5px;
-  margin-bottom: 10px;
-}
-
-.main-footer .gallery-widget .image-box img {
-  position: relative;
-  display: block;
-  width: 100%;
-  border-radius: 4px;
-  -webkit-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.main-footer .gallery-widget .image-box img:hover {
-  opacity: 0.7;
-}
-
-/* Info List */
-
-.main-footer .info-list {
-  position: relative;
-}
-
-.main-footer .info-list li {
-  position: relative;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #0b132a;
-  margin-bottom: 12px;
-}
-
-.main-footer .info-widget .social-links li:last-child {
-  margin-right: 0px;
-}
-
-.main-footer .info-widget .social-links li a {
-  position: relative;
-  color: #ffffff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.main-footer .info-widget .social-links li.google a {
-  background-color: #dd4b39;
-}
-
-.main-footer .info-widget .social-links li.facebook a {
-  background-color: #4a6fbe;
-}
-
-.main-footer .info-widget .social-links li.twitter a {
-  background-color: #55acee;
-}
-
-.main-footer .info-widget .social-links li.instagram a {
-  background-color: #ea4c89;
-}
-
-.main-footer .info-widget .social-links li.vimeo a {
-  background-color: #1ab7ea;
-}
-
-.main-footer .footer-bottom {
-  position: relative;
-  padding: 20px 0px;
-  border-top: 1px solid #e5e5e5;
-}
-
-.main-footer .footer-bottom .footer-nav {
-  position: relative;
-  text-align: right;
-}
-
-.main-footer .footer-bottom .footer-nav li {
-  position: relative;
-  padding-right: 10px;
-  margin-right: 10px;
-  line-height: 1.1em;
-  display: inline-block;
-  border-right: 1px solid #8a8d91;
-}
-
-.main-footer .footer-bottom .footer-nav li:last-child {
-  padding-right: 0px;
-  margin-right: 0px;
-  border-right: none;
-}
-
-.main-footer .footer-bottom .footer-nav li a {
-  position: relative;
-  color: #8a8d91;
-  font-size: 15px;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.main-footer .footer-bottom .footer-nav li a:hover {
-  color: #ff6666;
-  text-decoration: underline;
-}
-
-/* --------------- lang button color ------------- */
-
-.ln-btn-color {
-  color: #0b132a;
-  cursor: pointer;
-}
-
-/* --------------- lang button color ------------- */
-
-.theme_color a {
-  text-decoration: none;
-  color: #0b132a;
-}
-
-.theme_color a:hover {
-  text-decoration: none;
-  color: #23bb86;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.h1-style {
-  font-weight: bold !important;
-  font-size: 26px;
-  line-height: 39px;
-  color: #082e13;
-  max-width: 100%;
-  max-height: 100%;
-}
-h2 {
-  padding-top: 43px;
-}
-.h3-style {
-  width: 80%;
-  padding-top: 21px;
-  font-style: normal;
-  font-weight: normal !important;
-  font-size: 20px;
-  line-height: 30px;
-  color: #082e13;
-  max-width: 100%;
-  max-height: 100%;
-}
-.contain {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-hr {
-  background: #2f673f;
-  border-radius: 0px 0.5px 0.5px 0px;
-}
-
-.input-font {
-  padding-top: 42px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 25px;
-  color: #082e13;
-}
-
-.h2-font {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
-  color: #082e13;
-}
-
-.img-padding {
-  padding-top: 109px;
-  padding-bottom: 137px;
-}
-
-.logo {
-  width: 204px;
-  height: 90px;
-  top: 31px;
-}
-
-.nav-height {
-  height: 116px;
-  padding-bottom: 0px !important;
-}
-
-.under-line {
-  border-bottom: 1px solid #2f673f !important;
-}
-.under-line-form {
-  border-bottom: 1px solid #2f673f;
-}
-.row-height {
-  padding-top: 50px;
-  padding-bottom: 77px;
-}
-.cow-pic-col {
-  background: rgba(239, 255, 240, 0.5);
-  border-radius: 15px;
-}
-
-.form-col-content {
-  padding-top: 59px;
-  padding-left: 88px;
-}
-
-.form-col {
-  background: #fdfcfc;
-  box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.67);
-  border-radius: 15px;
-}
-
-.text-style {
-  padding-right: 90px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  color: #082e13;
-}
-.dot {
-  width: 8px;
-  height: 8px;
-  background: #2f673f;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.line {
-  display: block;
-  width: 35%; /*or whatever width you want the effect of <hr>*/
-  border-top: 2px solid #2f673f;
-}
-.footer-row-height {
-  padding-top: 42px;
-}
-
-.form-col-end {
-  font-size: 0px;
-}
-
-/*new css end */
-
-.input-field {
-  height: 35px;
-  width: 80%;
-  background: #ffffff;
-  border: 0.5px solid #226034;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.login-button {
-  background: #23bb86;
-  border-radius: 200px;
-}
-
-.login-text {
-  width: 40%;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  /* identical to box height */
-
-  color: #ffffff;
-}
-
-checkbox {
-  background: #ffffff;
-  border: 0.5px solid #2f673f;
-  box-sizing: border-box;
-  border-radius: 1px;
-}
-
-.condition-padding {
-  padding-top: 23px;
-  padding-bottom: 29px;
-}
-
-.forgot-row-padding {
-  padding-top: 43px;
-}
-
+/*----------------my css for sign in ---------------------*/
 .form-bottom-links {
   padding-right: 90px;
   font-family: Poppins;
@@ -563,26 +18,178 @@ checkbox {
   color: #082e13;
 }
 
-.form-bottom-text-padding {
-  padding-top: 76px;
+.welcome-text-padding {
+  padding-bottom: 44px;
+  padding-top: 21px;
 }
 
-.container {
-  width: 90% !important;
+.password-label-padding {
+  padding-top: 42px;
 }
 
-.condition {
+@media screen and (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+
+  .form-bottom-links {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*----------------my css for sign in end ---------------------*/
+
+/*---------------- css from lamia ----- ---------------------*/
+
+/* ----------------row------------------------------ */
+.row {
+  flex-wrap: wrap-reverse;
+  padding: 10px;
+
   font-family: Poppins;
   font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
-  /* identical to box height */
+  font-size: 18px;
+
+  color: #2f673f;
+}
+/* ------------------colum----------*/
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 2;
+  max-width: 50%;
+  padding: 10px;
+}
+
+/* -------------------------------registration 1st page left side---------------------- */
+.left {
+  background: rgba(239, 255, 240, 0.5);
+  border-radius: 15px;
+}
+
+/* -------------------------------registration 1st page right side---------------------- */
+
+.right {
+  padding: 10px;
+  background: #fdfcfc;
+  box-shadow: 0px 4px 18px rgb(79 172 35 / 67%);
+  border-radius: 15px;
+}
+
+/* --------------------------------- registration 1st page form -----------------------------------*/
+.h1,
+h1 {
+  font-size: 26px;
+}
+
+.h4,
+h4 {
+  font-size: 20px;
+}
+
+.form {
+  padding-left: 30px;
+  padding-top: 22px;
+  padding-right: 29px;
+  padding-bottom: 52px;
+}
+
+.reg {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
 
   color: #082e13;
 }
 
-/* horizontal logo */
+.create {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+
+  color: #082e13;
+}
+
+.icone {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 0px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.user {
+  padding: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #2f673f;
+}
+
+.email {
+  padding: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #2f673f;
+}
+
+.cre-pass {
+  padding: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #2f673f;
+}
+
+.con-pass {
+  padding: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #2f673f;
+}
+/* ------------------checkbox registration 1st page---------------------- */
+.check {
+  padding-top: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  display: block ruby;
+  color: #2f673f;
+}
+/* ----------------------button---------------------------------- */
+.btn {
+  background: #23bb86;
+  border-radius: 25px !important;
+  font-family: Poppins;
+  color: #ffffff;
+  width: 200px;
+}
+
+/* ------------------------Right side registration 2nd page-------------------- */
+
+.right-reg {
+  padding: 10px;
+  background: #fdfcfc;
+  box-shadow: 0px 4px 18px rgb(79 172 35 / 67%);
+  border-radius: 15px;
+  height: 652px;
+}
+
+/*---------------------------horizontal logo 1st page----------------------------------------*/
 .horizontal-logo {
   margin-top: 34px;
   text-align: center;
@@ -591,15 +198,14 @@ checkbox {
 }
 .horizontal-logo .before {
   display: flex;
-  width: 80%;
+  width: 42%;
   height: 2px;
-  background: #2f673f;
-  border-radius: 0px 0.5px 0.5px 0px;
+  background: rgba(47, 103, 63, 1);
 }
 
 .horizontal-logo .after {
   display: flex;
-  width: 80%;
+  width: 42%;
   height: 2px;
   background: rgba(47, 103, 63, 1);
 }
@@ -609,118 +215,207 @@ checkbox {
   align-items: center;
   display: flex;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  width: 308px;
+  height: 36px;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 36px;
-  justify-content: center;
-  /* identical to box height */
-
-  color: #2f673f;
+  margin-left: 20px;
 }
 
 .logo-text::after {
   content: "";
   width: 10px;
   height: 10px;
-  margin: 0 5px;
+  margin: 11px 13px;
   border-radius: 25px;
   background-color: rgba(47, 103, 63, 1);
 }
 
-.logo-text:before {
+.logo-text::before {
   content: "";
   width: 10px;
   height: 10px;
-  margin: 0 5px;
+  margin: 0px 12px 0px 1px;
   border-radius: 25px;
   background-color: rgba(47, 103, 63, 1);
 }
 
-@media screen and (max-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-  .h1-style {
-    font-size: 24px;
-    line-height: 36px;
+/*---------------------- horizontal logo 2nd page ------------------------*/
+.horizontal-logo2 {
+  margin-top: 204px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.horizontal-logo2 .before {
+  display: flex;
+  width: 42%;
+  height: 2px;
+  background: rgba(47, 103, 63, 1);
+}
+
+.horizontal-logo2 .after {
+  display: flex;
+  width: 42%;
+  height: 2px;
+  background: rgba(47, 103, 63, 1);
+}
+
+.logo2-text {
+  position: relative;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 308px;
+  height: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.logo2-text::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 11px 13px;
+  border-radius: 25px;
+  background-color: rgba(47, 103, 63, 1);
+}
+
+.logo2-text::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 0px 12px 0px 1px;
+  border-radius: 25px;
+  background-color: rgba(47, 103, 63, 1);
+}
+
+/* Assign full width inputs*/
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 16px 40px;
+  margin: 4px 0;
+  margin-left: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: -46px;
+}
+/* Set a style for the buttons*/
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+}
+
+/* Set a hover effect for the button*/
+button:hover {
+  opacity: 0.8;
+}
+
+button,
+btn {
+  text-transform: none;
+  margin-top: 47px;
+  margin-bottom: 172px;
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  position: absolute;
+  padding: 9px;
+  margin-top: 14px;
+  margin-left: -38px;
+}
+
+/*---------------------------------------------- Css for agent dashboard -----------------------------------------*/
+.hi {
+  display: block;
+}
+
+/* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* ------------------------------------------------------------------------------------ end - media screen for tab ( portrait )  */
+
+/* ------------------------------------------ media screen for tab (landscape) ------------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+}
+
+/* -------------------------------------------------------------------------------------- end - media screen for tab (landscape) */
+
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* ---------------------------------------------------------------------------------- end - media screen for tab (pro) portrait */
+
+/* ---------------------------------------------- media screen for tab ( pro ) landscape --------------------------------------- */
+
+@media only screen and (min-device-width: 1366px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ------------------------------------------------------------------------------- end - media screen for tab ( pro ) landscape  */
+
+/* ------------------------------------------------------- media screen for mobile devices ------------------------------------- */
+@media only screen and (max-width: 600px) {
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    font-size: 13px;
   }
-  .h3-style {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 15px;
-  }
-  .input-font {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .input-field {
-    width: 100%;
-  }
-  .h2-font {
-    font-size: 22px;
-    line-height: 33px;
-  }
-  .text-style {
-    padding-right: 0px;
+
+  .icone {
+    height: 100%;
+    width: 300px;
+    outline: none;
+    border: 0px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 45px;
     font-size: 17px;
-    line-height: 25px;
-  }
-
-  .form-bottom-links {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .logo-text {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .horizontal-logo .before {
-    width: 50%;
-  }
-  .horizontal-logo .after {
-    width: 50%;
-  }
-  .under-line-form {
-    border-bottom: 0px;
-  }
-  .row-height {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .form-col {
-    background: #ffffff;
-    box-shadow: none;
-    background-color: fff;
-  }
-  .form-col-content {
-    padding-top: 0px;
-    padding-left: 0px;
-  }
-  .form {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 41px;
-    background: #fdfcfc;
-    box-shadow: 0px 4px 18px rgba(79, 172, 35, 0.2);
-    border-radius: 15px;
-  }
-  .condition-padding {
-    padding-top: 0px;
-  }
-
-  .login-button {
-    background: #23bb86;
-    border-radius: 3px;
-  }
-  .login-text {
-    width: 100%;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .forgot-row-padding {
-    padding-top: 54px;
-    padding-bottom: 71px;
+    transition: all 0.3s ease;
   }
 }
+
+/* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
+
+/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
+
+@media only screen and (device-width: 1366px) and (device-height: 768px) {
+  .icone {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 0px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 45px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+}
+
+/* ---------------------media screee for ragestration page left side image --------------------------------------*/
+@media screen and (max-width: 800px) {
+  .left {
+    display: none;
+  }
+}
+/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
+
+/*---------------- css from lamia ----- ---------------------*/

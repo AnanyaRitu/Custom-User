@@ -1,6 +1,5 @@
-<h1>WElcome</h1>
+<h1>WElcome {{request.user.user_name}}</h1>
 
 <a class="btn btn-primary btn-sm btn-block" href={% url 'logout' %}>Logout</a>
-<a class="btn btn-primary btn-sm btn-block" href={% url 'registration' %}>Register</a>
 
 
